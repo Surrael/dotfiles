@@ -19,7 +19,8 @@ yay -Sy --needed hyprland waybar kitty nautilus wofi swaync hypridle hyprpaper \
   ly starship zsh pavucontrol bluez-utils blueman networkmanager \
   networkmanager-dmenu ddcutil hyprshot git stow \
   ttf-font-awesome ttf-cascadia-code-nerd \
-  catppuccin-gtk-theme-mocha nwg-look
+  catppuccin-gtk-theme-mocha nwg-look thunar \
+  thunar-volman tumbler gvfs
 
 # Enable power script
 chmod +x ~/.config/wofi/power.sh
