@@ -21,6 +21,9 @@ yay -Sy --needed hyprland waybar kitty nautilus wofi swaync hypridle hyprpaper \
   ttf-font-awesome ttf-cascadia-code-nerd \
   catppuccin-gtk-theme-mocha nwg-look
 
+# Enable power script
+chmod +x ~/.config/wofi/power.sh
+
 # Enable services
 sudo systemctl enable ly.service
 sudo systemctl enable --now bluetooth

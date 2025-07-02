@@ -2,7 +2,7 @@
   "position": "top",
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "battery"],
+  "modules-right": ["tray", "bluetooth", "network", "pulseaudio", "battery", "custom/power"],
 
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
@@ -54,4 +54,10 @@
   "tray": {
           "spacing": 10,
   },
+  "custom/power": {
+    "format": "⏻ ",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/wofi/power.sh",
+    "interval": 0
+  }
 }
