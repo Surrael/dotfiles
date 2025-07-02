@@ -55,7 +55,7 @@
           "spacing": 10,
   },
   "custom/power": {
-    "format": "⏻ ",
+    "format": " ⏻ ",
     "tooltip": "Power Menu",
     "on-click": "~/.config/wofi/power.sh",
     "interval": 0
