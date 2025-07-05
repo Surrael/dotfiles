@@ -20,7 +20,7 @@ yay -Sy --needed hyprland waybar kitty nautilus wofi swaync hypridle hyprpaper \
   networkmanager-dmenu ddcutil hyprshot git stow \
   ttf-font-awesome ttf-cascadia-code-nerd \
   catppuccin-gtk-theme-mocha nwg-look thunar \
-  thunar-volman tumbler gvfs
+  thunar-volman tumbler gvfs brightnessctl
 
 # Enable power script
 chmod +x ~/.config/wofi/power.sh
