@@ -34,6 +34,9 @@ sudo systemctl enable --now NetworkManager
 ZSH_PATH=$(which zsh)
 chsh -s "$ZSH_PATH"
 
+# Install ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Load i2c for backlight support
 echo i2c-dev | sudo tee /etc/modules-load.d/i2c-dev.conf
 
