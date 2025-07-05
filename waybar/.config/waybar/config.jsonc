@@ -21,7 +21,7 @@
         "custom/power"
     ],
     "network": {
-        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+        "format-wifi": "<span size='13000' foreground='#f5e0dc'>   </span>{essid}",
         "format-ethernet": "<span size='13000' foreground='#f5e0dc'>  </span>",
         "format-linked": "<span size='13000' foreground='#f5e0dc'> 󰈁 </span>{ifname} (No IP)",
         "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
@@ -52,7 +52,7 @@
         "spacing": 10
     },
     "clock": {
-"format": "<span foreground='#f5c2e7'>    </span>{:%d %b  %H:%M}",
+      "format": "<span foreground='#f5c2e7'>  </span>{:%d %b  %H:%M}",
       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
     "battery": {
@@ -93,9 +93,9 @@
             "portable": "  ",
             "car": "  ",
             "default": [
-                "  ",
-                "   ",
-                "    "
+                " ",
+                " ",
+                " "
             ]
         }
     },
