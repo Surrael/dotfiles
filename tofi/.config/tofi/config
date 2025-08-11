@@ -1,0 +1,10 @@
+# ~/.config/tofi/config
+font = JetBrainsMono Nerd Font:size=14
+prompt-text = "Run: "
+background-color = #1e1e2e
+text-color = #cdd6f4
+selection-color = #89b4fa
+border-width = 2
+border-color = #89b4fa
+padding = 10
+

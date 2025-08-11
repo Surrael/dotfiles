@@ -1,114 +1,93 @@
 {
-    "layer": "top",
-    "position": "top",
-    "mod": "dock",
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-    "height": 50,
-    "modules-left": [
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "clock"
-    ],
-    "modules-right": [
-        "network",
-        "bluetooth",
-        "battery",
-        "pulseaudio",
-        "tray",
-        "custom/power"
-    ],
-    "network": {
-        "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-        "format-ethernet": "<span size='13000' foreground='#f5e0dc'>  </span>",
-        "format-linked": "<span size='13000' foreground='#f5e0dc'> 󰈁 </span>{ifname} (No IP)",
-        "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-        "tooltip-format-wifi": "SSID: {essid}\nSignal Strength: {signalStrength}%\nIP: {ipaddr}",
-        "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
-        "tooltip-format-disconnected": "No connection",
-        "on-click": "networkmanager_dmenu"
-      },
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        }
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 50,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "bluetooth",
+    "battery",
+    "pulseaudio",
+    "tray",
+    "custom/power"
+  ],
+"network": {
+    "format-wifi": "<span size='13000' foreground='#f5e0dc'>   </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#f5e0dc'> 🖧 </span>",
+    "format-linked": "<span size='13000' foreground='#f5e0dc'> 󰈁 </span>{ifname} (No IP)",
+    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+    "tooltip-format-wifi": "SSID: {essid}\nSignal Strength: {signalStrength}%\nIP: {ipaddr}",
+    "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}",
+    "tooltip-format-disconnected": "No connection",
+},
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "on-click": "activate",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": []
+    }
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+  "clock": {
+    "format": "<span foreground='#f5c2e7'>  </span>{:%d %b %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "battery": {
+    "interval": 1,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
     },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 10
-    },
-    "clock": {
-"format": "<span foreground='#f5c2e7'>    </span>{:%d %b  %H:%M}",
-      "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "battery": {
-        "interval": 1,
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "󰂎",
-            "󰁺",
-            "󰁻",
-            "󰁼",
-            "󰁽",
-            "󰁾",
-            "󰁿",
-            "󰂀",
-            "󰂁",
-            "󰂂",
-            "󰁹"
-        ]
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-muted": "  ",
-        "on-click": "pavucontrol",
-        "format-icons": {
-            "headphone": "  ",
-            "hands-free": "  ",
-            "headset": "  ",
-            "phone": "  ",
-            "portable": "  ",
-            "car": "  ",
-            "default": [
-                "  ",
-                "   ",
-                "    "
-            ]
-        }
-    },
-    "bluetooth": {
-        "format-off": "<span size='13000' foreground='#585b70'> </span>",
-        "format-connected": "<span size='13000' foreground='#89b4fa'> </span>{device_alias}",
-        "tooltip-format": "Bluetooth: {status}\nDevice: {device_alias}\nMAC: {device_address}",
-        "on-click": "blueman-manager"
-      },
-    "custom/power": {
-        "format": " ⏻ ",
-        "tooltip": "Power Menu",
-        "on-click": "~/.config/wofi/power.sh",
-        "interval": 0
-      }
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "tooltip": false,
+    "format-muted": "  ",
+    "on-click": "pavucontrol",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": "  ",
+      "default": [" ", " ", " "]
+    }
+  },
+  "bluetooth": {
+    "format-off": "<span size='13000' foreground='#585b70'> </span>",
+    "format-connected": "<span size='13000' foreground='#89b4fa'> </span>{device_alias}",
+    "tooltip-format": "Bluetooth: {status}\nDevice: {device_alias}\nMAC: {device_address}",
+    "on-click": "blueman-manager"
+  },
+  "custom/power": {
+    "format": " ⏻ ",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/wofi/power.sh",
+    "interval": 0
+  }
 }
